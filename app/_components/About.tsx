@@ -1,7 +1,6 @@
 import {Kanit} from "next/font/google"
 import Skills from "./Skills";
 
-const league = Kanit({ subsets: ["latin"], weight: "500" });
 const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 export default function About() {

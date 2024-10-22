@@ -10,7 +10,12 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const updateMousePosition = (e: any) => {
+    interface MousePosition {
+      x: number;
+      y: number;
+    }
+
+    const updateMousePosition = (e: MouseEvent): void => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
