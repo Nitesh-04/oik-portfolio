@@ -10,13 +10,9 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    interface MousePosition {
-      x: number;
-      y: number;
-    }
 
     const updateMousePosition = (e: MouseEvent): void => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+      setMousePosition({ x: e.clientX, y: e.clientY + window.scrollY});
     };
 
     window.addEventListener("mousemove", updateMousePosition);
@@ -29,11 +25,12 @@ export default function Home() {
   return (
     <div id="main" className="bg-[#00162b] relative px-6 py-12 md:px-12 md:py-12 lg:px-24 lg:py-12">
       <div
-        className="pointer-events-none absolute -inset-px opacity-50 transition-opacity duration-300"
+        className="pointer-events-none absolute inset-0 opacity-50 transition-opacity duration-300"
         style={{
-          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29,718,296, 0.15), transparent 80%)`,
+          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 718, 296, 0.15), transparent 80%)`,
         }}
       />
+
       <div className="flex flex-col lg:flex-row relative z-10 w-full">
         <div className="lg:w-1/2 lg:fixed">
           <Name />
