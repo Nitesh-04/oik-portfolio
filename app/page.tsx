@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Name from './_components/Name';
-import About from './_components/About';
-import Experience from './_components/Experience';
-import Projects from './_components/Projects';
+import { useState, useEffect } from "react";
+import Name from "./_components/Name";
+import About from "./_components/About";
+import Experience from "./_components/Experience";
+import Projects from "./_components/Projects";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -14,10 +14,10 @@ export default function Home() {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    window.addEventListener('mousemove', updateMousePosition);
+    window.addEventListener("mousemove", updateMousePosition);
 
     return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
+      window.removeEventListener("mousemove", updateMousePosition);
     };
   }, []);
 
