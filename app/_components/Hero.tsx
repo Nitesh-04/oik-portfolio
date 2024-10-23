@@ -7,6 +7,8 @@ const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 export default function Hero()
 {
+    const year = new Date().getFullYear();
+
     return (
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:py-4">
             <p className={`${league.className} font-extrabold text-slate-200  text-[48px] md:text-[54px]`}>Akshat Gupta</p>
@@ -21,7 +23,7 @@ export default function Hero()
             </div>
 
             <div className="calendar mt-12 w-3/5 lg:block hidden">
-                <GitHubCalendar username="Oik17" colorScheme="dark"/>
+                <GitHubCalendar username="Oik17" colorScheme="dark" year={year}/>
             </div>
 
             <div className="flex gap-4 lg:mt-8 mt-10">

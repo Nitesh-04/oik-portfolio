@@ -6,6 +6,8 @@ const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 export default function Projects() {
 
+  const year = new Date().getFullYear();
+
   return (
     <section id="projects" className={`${league1.className} p-2 md:p-6 mt-4 `}>
       <div className="text-slate-400 text-justify">
@@ -38,7 +40,7 @@ export default function Projects() {
         ))}
       </div>
       <div className="calendar lg:hidden block mt-16">
-          <GitHubCalendar username="Oik17" colorScheme="dark"/>
+          <GitHubCalendar username="Oik17" colorScheme="dark" year={year}/>
       </div>
     </section>
   );
