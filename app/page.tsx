@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Name from "./_components/Hero";
 import About from "./_components/About";
 import Experience from "./_components/Experience";
 import Projects from "./_components/Projects";

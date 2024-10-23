@@ -13,8 +13,8 @@ export default function Hero()
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:py-4">
             <p className={`${league.className} font-extrabold text-slate-200  text-[48px] md:text-[54px]`}>Akshat Gupta</p>
             <p className={`${league1.className}  text-xl text-slate-300 mt-[-10px]`}>Backend Developer</p>      
-            <p className={`${league1.className} text-slate-400 mt-8 md:mt-6 lg:hidden block`}>"The best backend is the one you never</p> 
-            <p className={`${league1.className} text-slate-400 lg:hidden block`}>notice, silently powering everything."</p> 
+            <p className={`${league1.className} text-slate-400 mt-8 md:mt-6 lg:hidden block`}> &quot;The best backend is the one you never</p> 
+            <p className={`${league1.className} text-slate-400 lg:hidden block`}>notice, silently powering everything.&quot;</p> 
             
             <div className="lg:flex-col gap-2 lg:flex md:hidden hidden mt-10 text-slate-400 w-fit text-sm">
                 <a href="#main"><p className={`${league.className} hover:text-slate-100 hover:duration-500`}>{"------  "} &nbsp; ABOUT</p></a>
