@@ -14,7 +14,7 @@ export default function Experience() {
         {work.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col md:px-5 py-4 md:grid md:grid-cols-4 gap-4 border-b border-slate-700 pb-4 mb-4 hover:md:scale-105 transition-transform duration-300 ease-in-out hover:md:border-teal-500/40 bg-transparent hover:md:bg-slate-600/20 hover:md:rounded-lg"
+            className="flex flex-col md:px-5 py-4 md:grid md:grid-cols-4 gap-4 border-t border-slate-700 pb-4 mb-4 hover:md:scale-105 transition-transform duration-300 ease-in-out hover:md:border-teal-500/40 bg-transparent hover:md:bg-slate-600/20 hover:md:rounded-lg"
           >
             <div className="text-slate-400 md:col-span-1 md:text-left md:pr-6">
               {item.date}
