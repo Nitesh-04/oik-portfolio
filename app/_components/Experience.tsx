@@ -5,7 +5,7 @@ const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 export default function Experience() {
   return (
-    <div id="experience" className={`${league1.className} p-2 md:p-6 mt-16 lg:mt-0`}>
+    <section id="experience" className={`${league1.className} p-2 md:p-6 mt-16 lg:mt-0`}>
       <div className="text-slate-400 text-justify">
         <p className="text-slate-100 text-2xl font-semibold">Experience</p>
       </div>
@@ -39,7 +39,7 @@ export default function Experience() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

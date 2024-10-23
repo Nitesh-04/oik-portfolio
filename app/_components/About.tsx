@@ -5,7 +5,7 @@ const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 export default function About() {
     return (
-        <div className=" lg:scroll-mt-24 md:mb-24 lg:mb-20 lg:mt-10">
+        <section id="about" className=" lg:scroll-mt-24 md:mb-24 lg:mb-20 lg:mt-10">
             <div className={`${league1.className} text-slate-400 text-justify`}>
                 <span className="text-slate-100 block lg:hidden mb-5 text-2xl">About</span>
                 I am a backend developer with a strong passion for creating efficient, scalable solutions. Proficient in languages like Go, NodeJS, and Python, I have gained valuable experience working with a variety of technologies.
@@ -14,6 +14,6 @@ export default function About() {
                 <br></br><br></br>
                 <Skills/>
             </div>
-        </div>
+        </section>
     )
 }

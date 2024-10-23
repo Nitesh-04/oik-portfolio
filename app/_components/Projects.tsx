@@ -9,7 +9,7 @@ export default function Projects() {
   const year = new Date().getFullYear();
 
   return (
-    <div id="projects" className={`${league1.className} p-2 md:p-6 mt-4 `}>
+    <section id="projects" className={`${league1.className} p-2 md:p-6 mt-4 `}>
       <div className="text-slate-400 text-justify">
         <p className="text-slate-100 text-2xl font-semibold">Projects</p>
       </div>
@@ -42,7 +42,7 @@ export default function Projects() {
       <div className="calendar lg:hidden block mt-16">
           <GitHubCalendar username="Oik17" colorScheme="dark" year={year} />
       </div>
-    </div>
+    </section>
   );
 }
 
