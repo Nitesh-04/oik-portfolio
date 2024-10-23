@@ -44,17 +44,28 @@ body {
 }
 
 .calendar {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 
 .calendar ::-webkit-scrollbar {
-  display: none;
+  height: 2px;
+}
+
+.calendar ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.calendar ::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
 }
 
 
 .calendar {
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #000 transparent;
 }
 
 
