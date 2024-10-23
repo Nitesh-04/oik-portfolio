@@ -22,7 +22,7 @@ export default function Experience() {
 
             <div className="md:col-span-3">
               <p className="text-slate-100 font-semibold text-lg">{item.title}</p>
-              <p className="text-slate-400 text-sm mb-2">{item.company}</p>
+              <p className="text-teal-300 text-sm mb-2">{item.company}</p>
               <p className="text-slate-400 text-sm mb-4 text-justify">{item.description}</p>
 
               <div className="flex flex-wrap gap-2">

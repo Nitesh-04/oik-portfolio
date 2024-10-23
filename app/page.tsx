@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Name from "./_components/Name";
+import Name from "./_components/Hero";
 import About from "./_components/About";
 import Experience from "./_components/Experience";
 import Projects from "./_components/Projects";
+import Organisations from "./_components/Orgs";
+import Hero from "./_components/Hero";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -33,7 +35,7 @@ export default function Home() {
 
       <div className="flex flex-col lg:flex-row relative z-10 w-full">
         <div className="lg:w-1/2 lg:fixed">
-          <Name />
+          <Hero />
         </div>
 
         <div className="pt-14 lg:pt-0 lg:w-1/2 lg:ml-auto overflow-y-auto">
@@ -41,6 +43,7 @@ export default function Home() {
             <About />
             <Experience />
             <Projects/>
+            <Organisations/>
           </div>
         </div>
       </div>

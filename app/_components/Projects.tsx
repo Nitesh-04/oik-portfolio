@@ -1,11 +1,15 @@
 import { Kanit } from "next/font/google";
+import GitHubCalendar from "react-github-calendar";
 
 const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 
 export default function Projects() {
+
+  const year = new Date().getFullYear();
+
   return (
-    <div id="projects" className={`${league1.className} p-2 md:p-6 mt-12 `}>
+    <div id="projects" className={`${league1.className} p-2 md:p-6 mt-4 `}>
       <div className="text-slate-400 text-justify">
         <p className="text-slate-100 text-2xl font-semibold">Projects</p>
       </div>
@@ -14,7 +18,7 @@ export default function Projects() {
         {work.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col md:px-5 py-4 gap-4 border-b border-slate-700 pb-4 mb-4 hover:scale-105 transition-transform duration-300 ease-in-out hover:border-teal-500/40 bg-transparent hover:bg-slate-600/20 hover:rounded-lg"
+            className="flex flex-col md:px-5 py-4 gap-4 border-b border-slate-700 pb-4 mb-4 hover:md:scale-105 transition-transform duration-300 ease-in-out hover:md:border-teal-500/40 bg-transparent hover:md:bg-slate-600/20 hover:md:rounded-lg"
           >
 
             <div className="">
@@ -34,6 +38,9 @@ export default function Projects() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="calendar lg:hidden block mt-16">
+          <GitHubCalendar username="Oik17" colorScheme="dark" year={year} />
       </div>
     </div>
   );

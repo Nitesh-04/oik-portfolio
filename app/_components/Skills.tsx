@@ -3,7 +3,7 @@ import "/node_modules/devicon/devicon.min.css";
 export default function Skills() {
     return (
         <div className="" id="skills">
-            <div className="flex flex-wrap gap-6 mt-10 px-6 text-slate-300">
+            <div className="flex flex-wrap gap-6 mt-10 lg:px-6 px-2 text-slate-300">
                 
                 {/* Languages */}
                 <div className="relative group">

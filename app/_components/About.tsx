@@ -5,14 +5,12 @@ const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
 export default function About() {
     return (
-        <div className=" lg:scroll-mt-24 md:mb-24 lg:mb-20">
+        <div className=" lg:scroll-mt-24 md:mb-24 lg:mb-20 lg:mt-10">
             <div className={`${league1.className} text-slate-400 text-justify`}>
-                <span className="text-slate-100 block lg:hidden mb-5">About</span>
-                With a passion for backend development, I excel in various technologies and am a team player and quick learner. Proficiency in several languages like Go, NodeJS and Python has helped me gain exposure to the world of backend.
-                Seeking opportunities to broaden my expertise and grow my skill set.
+                <span className="text-slate-100 block lg:hidden mb-5 text-2xl">About</span>
+                I am a backend developer with a strong passion for creating efficient, scalable solutions. Proficient in languages like Go, NodeJS, and Python, I have gained valuable experience working with a variety of technologies.
                 <br></br><br></br>
-                With a passion for backend development, I excel in various technologies and am a team player and quick learner. Proficiency in several languages like Go, NodeJS and Python has helped me gain exposure to the world of backend.
-                Seeking opportunities to broaden my expertise and grow my skill set.
+                As a quick learner and team player, I thrive in collaborative environments and am always eager to tackle new challenges. I am now seeking opportunities to broaden my expertise, enhance my skill set, and contribute to impactful projects that push my boundaries.
                 <br></br><br></br>
                 <Skills/>
             </div>

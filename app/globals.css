@@ -26,19 +26,35 @@ body {
   }
 }
 
-/* Width of the scrollbar */
+
 ::-webkit-scrollbar {
-  width: 6px; /* Customize width */
+  width: 6px;
 }
 
-/* Track (the background of the scrollbar) */
+
 ::-webkit-scrollbar-track {
-  background: #00162b; /* Customize track color */
+  background: #00162b;
 }
 
-/* Handle (the scrolling part) */
+
 ::-webkit-scrollbar-thumb {
-  background-color: #75fede; /* Customize the handle color */
-  border-radius: 10px; /* Make the handle rounded */
-  border: 3px solid transparent; /* Add padding inside the handle */
+  background-color: #75fede;
+  border-radius: 10px;
+  border: 3px solid transparent;
 }
+
+.calendar {
+  overflow: hidden;
+}
+
+
+.calendar ::-webkit-scrollbar {
+  display: none;
+}
+
+
+.calendar {
+  scrollbar-width: none;
+}
+
+
